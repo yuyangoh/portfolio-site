@@ -7,16 +7,16 @@
         <link rel="stylesheet" href="works.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script src="script.js"></script>
     </head>
 <body>
 
 
 <div class="nav">
-    <h1>All works</h1>
+    <button id="home" onclick="closeAll()" style="color:black">WORKS</button>
     <ul>
-     <li>Materials & product innovation <hr>
+     <li>Design & Research <hr>
         <button id="project1" onclick="openProject('project1')">Transformative Wool Textiles</button>
         <button onclick="openProject()">P-Threads</button>
      </li>
@@ -31,13 +31,11 @@
         <button onclick="openProject()">When Nature Speaks...</button>
      </li>
 
-     <li>Moving images <hr>
-        <button onclick="openProject()">reel</button>
-     </li>
-
-     <li>Still images <hr>
+     <li>Media <hr>
+        <button onclick="openProject()">video works</button>
         <button onclick="openProject()">photobook</button>
      </li>
+
 </ul>
 
     <footer>
@@ -54,11 +52,14 @@
 <div id="content" style="display:none">
   <table id="content1">
     <tr>
-        <td id="title">Title</td>
+        <th id="title" style="font-size:25px" colspan="2">Title</th>
     </tr>
     <tr>
         <td id="year">Year</td>
         <td id="acknowledgements">Acknowledgements</td>
+    </tr>
+    <tr>
+        <td id="abstract" colspan="2">Abstract</td>
     </tr>
   </table>
 </div>
