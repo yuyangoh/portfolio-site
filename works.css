@@ -2,6 +2,7 @@ body {
    font-family: "Public Sans", sans-serif;
    padding: 3.5vw;
    font-weight: 250;
+   overflow: hidden;
 }
 
 .nav {
@@ -69,16 +70,16 @@ footer a {
 }
 
 #content {
-   margin-left: 300px; /* Same width as the sidebar + left position in px */
+   margin-left: 260px; /* Same width as the sidebar + left position in px */
    padding: 0px 70px;
 }
 
-table, td {
+table {
   border: none;
 }
 
 td {
-   padding-top: 15px;
+   padding-top: 14px;
    font-size: 14px;
    font-weight: 250;
 }
@@ -86,4 +87,18 @@ td {
 th {
    text-align: left;
    font-weight: 250;
+}
+
+#projImg {
+   padding-top: 10px;
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+
+#readMore {
+    color: black;
+    text-decoration: underline;
+    white-space: nowrap;
+    margin-left: 5px;
 }
