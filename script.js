@@ -1,9 +1,10 @@
 let currentProject = null;
 
 function openProject(projectId) {
+  
   const project = projects[projectId];
 
-    var x = document.getElementById("content");
+    var x = document.getElementById("content1");
     var y = document.getElementById("overviewImg");
     if (x.style.display === "none" && y.style.display === "block") {
     x.style.display = "block";
@@ -27,7 +28,7 @@ function openProject(projectId) {
 }
 
 function closeAll() {
-  var x = document.getElementById("content");
+  var x = document.getElementById("content1");
   var y = document.getElementById("overviewImg");
   if (x.style.display === "block" && y.style.display === "none") {
   x.style.display = "none";
@@ -106,3 +107,74 @@ const projects = {
         linkTitle: "Visit page"
       },
 };
+
+//small screen 
+const slideOrder = [
+    "slide0",
+    "slide1",
+    "slide2",
+    "slide3",
+    "slide4",
+    "slide5",
+    "slide6",
+    "slide7"
+];
+
+let currentSlide = 0;
+
+const slides = {
+  slide0: {
+    image: "overview.png"
+  },
+
+  slide1: {
+    image: "twt_s.png"
+  },
+
+  slide2: {
+    image: "pt_s.png"
+  },
+
+  slide3: {
+    image: "row_s.png"
+  },
+
+  slide4: {
+    image: "ms_s.png"
+  },
+
+  slide5: {
+    image: "wns_s.png"
+  },
+
+  slide6: {
+    image: "v_s.png"
+  },
+
+  slide7: {
+    image: "p_s.png"
+  },
+}
+
+function showSlide(index) {
+    currentSlide = (index + slideOrder.length) % slideOrder.length; //loop
+
+    // get current slide
+    const slideId = slideOrder[currentSlide];
+    const slide = slides[slideId];
+
+    // update slide content
+    const img = document.getElementById("carouselImg");
+    img.src = slide.image;
+}
+
+//carousel navigation
+function next() {
+    showSlide(currentSlide + 1);
+}
+
+function prev() {
+    showSlide(currentSlide - 1);
+}
+
+showSlide(0);

@@ -5,12 +5,58 @@ body {
    overflow: hidden;
 }
 
-.nav {
-   width: 200px;
-   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+.container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  column-gap: 85px;
+  width: 100%;
 }
 
-.nav ul {
+#smallScreenNav, #carousel {
+    display: none;
+}
+
+@media (max-width: 768px) {
+   .container, #nav {
+      display:none;
+   }
+
+   #smallScreenNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+   }
+
+   #smallScreenNav button {
+        background: none;
+        border: none;
+        font-size: 5vw;
+        cursor: pointer;
+        color: #436DF5;
+   }
+
+    #carousel {
+        display: block;
+        width: 100%;
+    }
+
+    #carouselImg {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+   
+}
+
+#nav {
+   grid-column: 1;
+   position: fixed; /* stay in place on scroll */
+}
+
+#nav ul {
    font-family: "Public Sans", sans-serif;
    font-weight: 250;
    font-size: 14px;
@@ -19,7 +65,7 @@ body {
    padding: 0;
 }
 
-.nav li {
+#nav li {
    display: block;
    color: grey;
    margin-top: 16px;
@@ -63,15 +109,17 @@ footer a {
 }
 
 #overviewImg img{
-   margin-left: 420px; /* Same width as the sidebar + left position in px */
-   padding-top: 20px;
-   float: left;
-   width: 700px;
+   max-width: 75%;
+   height: auto;
+}
+
+#overviewImg {
+   align-items: center;
 }
 
 #content {
-   margin-left: 260px; /* Same width as the sidebar + left position in px */
-   padding: 0px 70px;
+   grid-column: 2;
+   padding-right: 70px;
 }
 
 table {

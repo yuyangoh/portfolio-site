@@ -12,8 +12,8 @@
     </head>
 <body>
 
-
-<div class="nav">
+<div class="container">
+<div id="nav">
     <button id="home" onclick="closeAll()" style="color:black">WORKS</button>
     <ul>
      <li>Design & Research <hr>
@@ -34,21 +34,18 @@
         <button id="project6" onclick="openProject('project6')">video works</button>
         <button id="project7" onclick="openProject('project7')">photobook</button>
      </li>
-
-</ul>
-
+    </ul>
     <footer>
         <p><a href="https://yuyangoh.github.io/aboutme_yy/" target="_blank">About me</a></p>
     </footer>
-
 </div>
 
-<div id="overviewImg" style="display:block">
-    <img src="overview.png" alt="Overview">
-</div>
+<div id="content">
+    <div id="overviewImg" style="display:block">
+        <img src="overview.png" alt="Overview">
+    </div>
 
-<div id="content" style="display:none">
-  <table id="content1">
+  <table id="content1" style="display:none">
     <tr>
         <th id="title" style="font-size:25px" colspan="2">Title</th>
     </tr>
@@ -68,6 +65,18 @@
         <td colspan="2"><img id="projImg" src="" alt="Project Image"></td>
     </tr>
   </table>
+</div>
+
+</div>
+
+<!-- small screen -->
+<div id="smallScreenNav">
+    <button onclick="prev()">←</button>
+    <button onclick="next()">→</button>
+</div>
+
+<div id="carousel">
+    <img id="carouselImg" src="overview.png" alt="Project Image">
 </div>
 
 </body>
