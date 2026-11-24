@@ -73,7 +73,7 @@ const projects = {
         acknowledgements: "Inspired by Elliott Cost, Lee Jisu, and various websites visited", 
         abstract: "Website builders have limited customisability and templates make many sites look similar. For me, a website is a canvas that I can prototype and express myself with. I build my websites from scratch with HTML, CSS, and Javascript, and their design to build processes are never linear.",
         image: "ms.png",
-        linkURL: "https://yuyangoh.github.io/sites-index/",
+        linkURL: "",
         linkTitle: "Visit my sites index"
       },
   
@@ -83,8 +83,8 @@ const projects = {
         acknowledgements: "With Felicia Wong, under the guidance of team from Design Incubation Centre", 
         abstract: "When Nature Speaks... is a concept for a design exhibition -- when nature speaks, designers respond. Its visual identity revolves around a pair of quotation marks and the call and response between nature and designers.",
         image: "wns.png",
-        linkURL: "",
-        linkTitle: "Read more"
+        linkURL: "https://youtu.be/KQEpuy4V0EU",
+        linkTitle: "Watch video"
       },
   
   project6: {
