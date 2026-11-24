@@ -43,7 +43,7 @@ const projects = {
         acknowledgements: "Under the guidance of Grace Tan", 
         abstract: "Wool yarn shrinks when subjected to textile processing techniques such as fulling. This project investigates encoding transformative forms into knitted textiles through the shrinkage of wool yarn. By combining wool yarn that transforms with a stable yarn that does not transform into the same knit, textures and forms emerge as the textile undergoes fulling.",
         image: "twt.png",
-        linkURL: "",
+        linkURL: "https://drive.google.com/file/d/1X8Oto-Hi03hG8SnCh_4KoW2S02sQ9PMI/view?usp=drive_link",
         linkTitle: "Read more"
       },
 
@@ -71,9 +71,9 @@ const projects = {
         title: "my sites",
         year: "2026",
         acknowledgements: "Inspired by Elliott Cost, Lee Jisu, and various websites visited", 
-        abstract: "Website builders have limited customisability and templates make many sites look similar. For me, a website is a canvas that I can prototype and express myself with. I build my websites from scratch with HTML, CSS, and Javascript, and their design to build processes are never linear.",
+        abstract: "This is a personal project. I find website builders limited in customisability and none of the sites I built with them felt like mine. Websites are like canvases that I can prototype and express myself with. I build my websites from scratch with HTML, CSS, and Javascript, and their design to build processes are never linear.",
         image: "ms.png",
-        linkURL: "",
+        linkURL: "https://yuyangoh.github.io/sites-index/",
         linkTitle: "Visit my sites index"
       },
   
@@ -91,7 +91,7 @@ const projects = {
         title: "video works",
         year: "2024 ~",
         acknowledgements: "Edited with Adobe Premiere Pro", 
-        abstract: "These videos were made for various purposes, mostly to summarise a project or a topic.",
+        abstract: "The selected videos here were made for events and projects.",
         image: "v.png",
         linkURL: "https://youtube.com/playlist?list=PLfJdLzewubAg&si=I-uc9jug8TRybpQ1",
         linkTitle: "Watch videos"
@@ -101,7 +101,7 @@ const projects = {
         title: "photobook",
         year: "2022 ~",
         acknowledgements: "Instagram page", 
-        abstract: "I hope you enjoy these photographs I took.",
+        abstract: "I hope to be able to make an actual photobook soon.",
         image: "p.png",
         linkURL: "https://www.instagram.com/mdmrmld/",
         linkTitle: "Visit page"
@@ -124,35 +124,43 @@ let currentSlide = 0;
 
 const slides = {
   slide0: {
-    image: "overview.png"
+    image: "overview.png",
+    link: "https://docs.google.com/spreadsheets/d/1lxSJMpUF7e0jJ6G0yEsl4iIj4VK-1yRxU1Km2FB860A/edit?usp=sharing"
   },
 
   slide1: {
-    image: "twt_s.png"
+    image: "twt_s.png",
+    link: "https://drive.google.com/file/d/1X8Oto-Hi03hG8SnCh_4KoW2S02sQ9PMI/view?usp=drive_link"
   },
 
   slide2: {
-    image: "pt_s.png"
+    image: "pt_s.png",
+    link: ""
   },
 
   slide3: {
-    image: "row_s.png"
+    image: "row_s.png",
+    link: ""
   },
 
   slide4: {
-    image: "ms_s.png"
+    image: "ms_s.png",
+    link: "https://yuyangoh.github.io/sites-index/"
   },
 
   slide5: {
-    image: "wns_s.png"
+    image: "wns_s.png",
+    link: "https://youtu.be/KQEpuy4V0EU"
   },
 
   slide6: {
-    image: "v_s.png"
+    image: "v_s.png",
+    link: "https://youtube.com/playlist?list=PLfJdLzewubAg&si=I-uc9jug8TRybpQ1"
   },
 
   slide7: {
-    image: "p_s.png"
+    image: "p_s.png",
+    link: "https://www.instagram.com/mdmrmld/"
   },
 }
 
@@ -166,6 +174,8 @@ function showSlide(index) {
     // update slide content
     const img = document.getElementById("carouselImg");
     img.src = slide.image;
+    const link = document.getElementById("carouselLink");
+    link.href = slide.link;
 }
 
 //carousel navigation
