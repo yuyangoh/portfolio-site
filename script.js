@@ -50,10 +50,10 @@ const projects = {
   project2: {
         title: "P-Threads",
         year: "2024",
-        acknowledgements: "Under the guidance of Yen Ching Chiuan, Sheryl Teng, E Ian Siew", 
+        acknowledgements: "With Sharon Lee, under the guidance of Yen Ching Chiuan, Sheryl Teng, E Ian Siew", 
         abstract: "This project explores bonding textiles with 3D-printed structures, replacing conventional stitching and adhesives. The functional and decorative aspects of this textile approach are illustrated with 3 wearables made with different 3D-print structures.",
         image: "pt.png",
-        linkURL: "",
+        linkURL: "https://drive.google.com/file/d/10DvMo6KXw7-E9bfli7B7Wi9hjvdeMJtk/view?usp=sharing",
         linkTitle: "Read more"
       },
   
@@ -63,7 +63,7 @@ const projects = {
         acknowledgements: "With Vina Setiawaty and Sheryl Teng, under the guidance of Clement Zheng", 
         abstract: "This is an interactive knitting performance: (1) Audiences establish instructions for a knit pattern through a digital form, (2) the knitter's digital interface receives the knit pattern and instructs her on the operation of the knitting machine, (3) all knit patterns submitted were archived in a digital library.",
         image: "row.png",
-        linkURL: "",
+        linkURL: "https://drive.google.com/file/d/1ueMXZO4rpM1IA-HR_zxtks45pa390RMR/view?usp=sharing",
         linkTitle: "Read more"
       },
   
@@ -135,12 +135,12 @@ const slides = {
 
   slide2: {
     image: "pt_s.png",
-    link: ""
+    link: "https://drive.google.com/file/d/10DvMo6KXw7-E9bfli7B7Wi9hjvdeMJtk/view?usp=sharing"
   },
 
   slide3: {
     image: "row_s.png",
-    link: ""
+    link: "https://drive.google.com/file/d/1ueMXZO4rpM1IA-HR_zxtks45pa390RMR/view?usp=sharing"
   },
 
   slide4: {
