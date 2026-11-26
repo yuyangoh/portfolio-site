@@ -71,7 +71,7 @@ const projects = {
         title: "my sites",
         year: "2026",
         acknowledgements: "Inspired by Elliott Cost, Lee Jisu, and various websites visited", 
-        abstract: "This is a personal project. I find website builders limited in customisability and the sites I built with them didn't really felt like mine. Websites are like canvases that I can prototype and express myself with. I build my websites from scratch with HTML, CSS, and Javascript.",
+        abstract: "This is a personal project. I build my websites from scratch with HTML, CSS, and Javascript.",
         image: "ms.png",
         linkURL: "https://yuyangoh.github.io/sites-index/",
         linkTitle: "Visit my sites index"
